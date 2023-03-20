@@ -5,3 +5,11 @@
 body{
     @apply bg-zinc-900 lg:px-52 box-border;
 }
+
+.rgBorder{
+    border-image-source: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.6) 100%);
+    background: linear-gradient(180deg, rgba(24,24,27,1) 0%, rgba(63,63,63,0.2) 100%) padding-box,
+                linear-gradient(65deg, rgb(26,26,26,0.6 ) 0%, rgba(255,255,255,0.3) 100%) border-box;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}

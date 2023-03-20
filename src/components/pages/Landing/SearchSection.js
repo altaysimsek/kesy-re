@@ -5,7 +5,7 @@ const SearchSection = () => {
     <section className='flex relative justify-center items-center gap-y-7 flex-col text-white h-96'>
         <h2 className='font-bold text-4xl'>Shorten your links with <span className='text-[#32D29A]'>Kesy!</span></h2>
         <div className='p-1 flex justify-between rounded-lg border-2 border-white/[.6] w-96'>
-            <input className='bg-transparent mx-2 text-xs' placeholder='Paste your link...'></input>
+            <input className='bg-transparent mx-2 text-xs w-full' placeholder='Paste your link...'></input>
             <button className='bg-white rounded-lg px-2 py-1 text-zinc-900 text-xs'>Shorten</button>
         </div>
         <p className="text-xs text-center font-medium opacity-60 transition hover:opacity-100">Hey there! Do you want to shorten your urls ?<br></br>It's super easy to use, just paste the link and voila!</p>
