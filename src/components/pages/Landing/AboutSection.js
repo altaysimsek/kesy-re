@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { IconBrandGithub } from '@tabler/icons-react'
 
 const AboutSection = () => {
   return (
@@ -16,14 +17,14 @@ const AboutSection = () => {
             amazing software. Together, we can build something great.
           </p>
           <Link href={'https://github.com/altaysimsek/kesy-re'}>
-            <span className="bg-black hover:cursor-pointer text-white text-xs p-3 rounded-lg font-medium">
-              View on GitHub
+            <span className="flex items-center bg-black hover:cursor-pointer text-white text-xs p-3 rounded-lg font-medium">
+              <IconBrandGithub className="mr-4" /> View on GitHub
             </span>
           </Link>
         </div>
         <div
           id="about"
-          className="flex flex-col w-8/12 bg-white gap-8 w-full py-7 px-8 rounded-3xl"
+          className="flex flex-col w-9/12 bg-white gap-8 w-full py-7 px-8 rounded-3xl"
         >
           <h3 className="font-bold text-2xl">About kesy</h3>
           <p className="transition hover:opacity-100 text-xs font-medium opacity-60">
