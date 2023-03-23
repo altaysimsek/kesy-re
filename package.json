@@ -12,6 +12,7 @@
 		"er:format": "prettier . --write"
 	},
 	"dependencies": {
+		"@tabler/icons-react": "^2.11.0",
 		"eslint": "8.35.0",
 		"eslint-config-next": "13.2.4",
 		"next": "13.2.4",
