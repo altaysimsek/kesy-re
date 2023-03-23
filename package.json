@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install",
+    "er:lint": "eslint . --fix --max-warnings=0",
+    "er:format": "prettier . --write"
   },
   "dependencies": {
     "eslint": "8.35.0",
@@ -21,6 +24,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "postcss": "^8.4.21",
     "prettier": "^2.8.5",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.2.7",
+    "husky": "^8.0.0"
   }
 }
