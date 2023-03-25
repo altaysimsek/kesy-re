@@ -7,8 +7,8 @@ const AboutSection = () => {
 			<h3 className='transition hover:opacity-100 font-bold text-2xl text-white opacity-80 mb-4'>
 				About & Contribute
 			</h3>
-			<div className='flex' id='contribute'>
-				<div className='flex flex-col mr-12 bg-white gap-8 py-7 px-8 w-3/12 rounded-3xl'>
+			<div className='flex justify-center gap-x-12' id='contribute'>
+				<div className='flex flex-col bg-white gap-8 py-7 px-8 w-4/12 rounded-3xl'>
 					<h3 className='font-bold text-2xl'>Contribute to kesy</h3>
 					<p className='transition hover:opacity-100 text-xs font-medium opacity-60'>
 						Do you have a passion for open source and want to contribute to
@@ -24,7 +24,7 @@ const AboutSection = () => {
 				</div>
 				<div
 					id='about'
-					className='flex flex-col w-9/12 bg-white gap-8 w-full py-7 px-8 rounded-3xl'
+					className='flex flex-col w-8/12 bg-white gap-8 w-full py-7 px-8 rounded-3xl'
 				>
 					<h3 className='font-bold text-2xl'>About kesy</h3>
 					<p className='transition hover:opacity-100 text-xs font-medium opacity-60'>

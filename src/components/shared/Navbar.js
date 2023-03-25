@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { IconArrowRight } from '@tabler/icons-react';
+import { signIn } from 'next-auth/react';
 
 const Navbar = () => {
 	return (
@@ -36,18 +37,12 @@ const Navbar = () => {
 				</nav>
 			</div>
 			<div className='flex justify-center items-center gap-9 text-sm'>
-				<Link
-					className='transition hover:opacity-100 opacity-60 text-white font-medium'
-					href='/login'
-				>
-					Log in
-				</Link>
-				<Link
-					className='flex justify-center items-center py-2 px-4 bg-[#32D29A] font-medium rounded-lg'
-					href='/register'
+				<div
+					className='flex cursor-pointer justify-center items-center py-2 px-4 bg-[#32D29A] font-medium rounded-lg'
+					onClick={() => signIn()}
 				>
 					Try for free <IconArrowRight size={14} />
-				</Link>
+				</div>
 			</div>
 		</div>
 	);

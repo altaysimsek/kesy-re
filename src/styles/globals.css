@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	@apply bg-zinc-900 lg:px-52 box-border;
+	@apply bg-zinc-900 box-border;
 }
 
 .rgBorder {
