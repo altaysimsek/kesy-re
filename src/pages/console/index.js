@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { getSession } from 'next-auth/react';
+import ConsoleLayout from '@/components/layout/ConsoleLayout';
 
 export default function Console() {
 	return (
@@ -14,6 +15,10 @@ export default function Console() {
 		</>
 	);
 }
+
+Console.getLayout = function getLayout(page) {
+	return <ConsoleLayout>{page}</ConsoleLayout>;
+};
 
 export async function getServerSideProps(context) {
 	const session = await getSession(context);
