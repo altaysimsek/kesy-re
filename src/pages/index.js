@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Landing from '@/components/pages/landing/Landing';
 import LandingLayout from '@/components/layout/LandingLayout';
 
-export default function Home() {
+export default function HomePage() {
 	return (
 		<>
 			<Head>
@@ -16,6 +16,6 @@ export default function Home() {
 	);
 }
 
-Home.getLayout = function getLayout(page) {
+HomePage.getLayout = function getLayout(page) {
 	return <LandingLayout>{page}</LandingLayout>;
 };
