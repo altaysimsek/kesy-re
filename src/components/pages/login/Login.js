@@ -8,6 +8,7 @@ import {
 import Link from 'next/link';
 import { useFormik } from 'formik';
 import { object, string } from 'yup';
+import { signIn } from 'next-auth/react';
 
 import Error from '@/components/ui/Error';
 
@@ -36,7 +37,7 @@ const Login = () => {
 				<button
 					onClick={() =>
 						signIn('github', {
-							redirect: '/',
+							redirect: '/braaaa',
 						})
 					}
 					className='transition flex items-center justify-center text-sm p-2 bg-zinc-700 hover:bg-zinc-600 opacity-60 border-2 border-zinc-500/[.6] rounded-lg'
