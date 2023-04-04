@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { getSession } from 'next-auth/react';
+
 import ConsoleLayout from '@/components/layout/ConsoleLayout';
 
 export default function Console() {

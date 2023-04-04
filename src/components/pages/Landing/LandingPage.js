@@ -1,9 +1,11 @@
 import React from 'react';
-import Navbar from '@/components/shared/Navbar';
+
 import Footer from '@/components/shared/Footer';
-import SearchSection from './SearchSection';
-import FeatureSection from './FeatureSection';
+import Navbar from '@/components/shared/Navbar';
+
 import AboutSection from './AboutSection';
+import FeatureSection from './FeatureSection';
+import SearchSection from './SearchSection';
 
 const Landing = () => {
 	return (

@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { IconBrandGithub } from '@tabler/icons-react';
+import Link from 'next/link';
 
 const AboutSection = () => {
 	return (

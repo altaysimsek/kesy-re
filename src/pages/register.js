@@ -1,5 +1,5 @@
-import Register from '@/components/pages/register/Register';
 import AuthLayout from '@/components/layout/AuthLayout';
+import Register from '@/components/pages/register/Register';
 
 const RegisterPage = () => {
 	return <Register />;

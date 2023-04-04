@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import { IconArrowRight } from '@tabler/icons-react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { signIn, signOut } from 'next-auth/react';
 
 const Navbar = () => {

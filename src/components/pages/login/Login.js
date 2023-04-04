@@ -1,14 +1,14 @@
 import {
-	IconUsers,
-	IconMail,
-	IconLock,
 	IconArrowRight,
 	IconBrandGithub,
+	IconLock,
+	IconMail,
+	IconUsers,
 } from '@tabler/icons-react';
-import Link from 'next/link';
 import { useFormik } from 'formik';
-import { object, string } from 'yup';
+import Link from 'next/link';
 import { signIn } from 'next-auth/react';
+import { object, string } from 'yup';
 
 import Error from '@/components/ui/Error';
 

@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Landing from '@/components/pages/landing/LandingPage';
+
 import LandingLayout from '@/components/layout/LandingLayout';
+import Landing from '@/components/pages/landing/LandingPage';
 
 export default function HomePage() {
 	return (
