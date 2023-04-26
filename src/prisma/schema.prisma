@@ -31,8 +31,9 @@ model Session {
 }
 
 enum UserRole{
-  ADMIN
   USER
+  ADMIN
+  PREMIUM
 }
 
 model User {
