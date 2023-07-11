@@ -1,8 +1,8 @@
 import AuthLayout from '@/components/layout/AuthLayout';
-import Login from '@/components/pages/login/Login';
+import SignIn from '@/components/pages/login/SignIn';
 
 const LoginPage = () => {
-	return <Login />;
+	return <SignIn />;
 };
 
 LoginPage.getLayout = function getLayout(page) {

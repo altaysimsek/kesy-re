@@ -38,14 +38,8 @@ const Navbar = () => {
 			</div>
 			<div className='flex justify-center items-center gap-9 text-sm'>
 				<Link
-					className='transition hover:opacity-100 opacity-60 text-white font-medium text-center'
-					href='/login'
-				>
-					Log in
-				</Link>
-				<Link
 					className='flex cursor-pointer justify-center items-center py-2 px-4 bg-[#32D29A] font-medium rounded-lg'
-					href='/register'
+					href='/login'
 				>
 					Try for free <IconArrowRight size={14} />
 				</Link>

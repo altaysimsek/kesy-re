@@ -1,20 +1,17 @@
-import React from 'react';
-
-import Footer from '@/components/shared/Footer';
-import Navbar from '@/components/shared/Navbar';
-
 import AboutSection from './AboutSection';
 import FeatureSection from './FeatureSection';
+import FooterSection from './FooterSection';
+import NavbarSection from './NavbarSection';
 import SearchSection from './SearchSection';
 
 const Landing = () => {
 	return (
 		<>
-			<Navbar />
+			<NavbarSection />
 			<SearchSection />
 			<FeatureSection />
 			<AboutSection />
-			<Footer />
+			<FooterSection />
 		</>
 	);
 };

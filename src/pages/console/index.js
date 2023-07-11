@@ -3,7 +3,7 @@ import { getSession } from 'next-auth/react';
 
 import ConsoleLayout from '@/components/layout/ConsoleLayout';
 
-export default function Console() {
+export default function ConsolePage() {
 	return (
 		<>
 			<Head>
@@ -12,12 +12,11 @@ export default function Console() {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<p>Login olma</p>
 		</>
 	);
 }
 
-Console.getLayout = function getLayout(page) {
+ConsolePage.getLayout = function getLayout(page) {
 	return <ConsoleLayout>{page}</ConsoleLayout>;
 };
 
