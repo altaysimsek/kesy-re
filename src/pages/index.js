@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import LandingLayout from '@/components/layout/LandingLayout';
-import Landing from '@/components/pages/landing/LandingPage';
+import LandingPage from '@/components/pages/landing/LandingPage';
 
 export default function HomePage() {
 	return (
@@ -12,7 +12,7 @@ export default function HomePage() {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Landing />
+			<LandingPage />
 		</>
 	);
 }
