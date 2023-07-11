@@ -4,7 +4,7 @@ import FooterSection from './FooterSection';
 import NavbarSection from './NavbarSection';
 import SearchSection from './SearchSection';
 
-const Landing = () => {
+const LandingPage = () => {
 	return (
 		<>
 			<NavbarSection />
@@ -16,4 +16,4 @@ const Landing = () => {
 	);
 };
 
-export default Landing;
+export default LandingPage;
