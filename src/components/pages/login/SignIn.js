@@ -31,7 +31,7 @@ const SignIn = () => {
 					className='cursor-pointer transition flex items-center justify-center text-sm p-2 bg-zinc-700 hover:bg-zinc-600 opacity-60 border-2 border-zinc-500/[.6] rounded-lg'
 					type='button'
 				>
-					<IconBrandGoogle size={18} className='mr-2' /> Continue with GitHub
+                                        <IconBrandGoogle size={18} className='mr-2' /> Continue with Google
 				</a>
 			</div>
 		</div>
