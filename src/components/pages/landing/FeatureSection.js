@@ -1,3 +1,26 @@
+import { IconBolt, IconChartBar, IconLink } from '@tabler/icons-react';
+
+const features = [
+	{
+		icon: IconLink,
+		title: 'Custom Shortcuts',
+		description:
+			'Create custom URLs that are easy to remember and reflect your brand.',
+	},
+	{
+		icon: IconChartBar,
+		title: 'Analytics',
+		description:
+			"Track clicks and other engagement metrics to gain insights into your audience's behavior.",
+	},
+	{
+		icon: IconBolt,
+		title: 'Superfast',
+		description:
+			'Spend less time managing URLs and more time growing your business.',
+	},
+];
+
 const FeatureSection = () => {
 	return (
 		<section id='features'>
@@ -5,29 +28,21 @@ const FeatureSection = () => {
 				Features
 			</h3>
 			<div className='flex justify-between px-16 mt-5'>
-				<div className='flex flex-col items-center p-4 gap-4 h-80 rgBorder rounded-lg drop-shadow-md'>
-					<p className='text-[#81ECAE] font-medium'>Custom Shortcuts</p>
-					<p className='text-xs font-medium text-white/[.6] text-center'>
-						Create custom URLs that are easy
-						<br />
-						to remember and reflect your brand.
-					</p>
-				</div>
-				<div className='flex flex-col items-center p-4 gap-4 h-80 rgBorder rounded-lg drop-shadow-md'>
-					<p className='text-[#81ECAE] font-medium'>Analytics</p>
-					<p className='text-xs font-medium text-white/[.6] text-center'>
-						Track clicks and other engagement
-						<br /> metrics to gain insights into your <br />
-						audience&apos;s behavior.
-					</p>
-				</div>
-				<div className='flex flex-col items-center p-4 gap-4 h-80 rgBorder rounded-lg drop-shadow-md'>
-					<p className='text-[#81ECAE] font-medium'>Superfast</p>
-					<p className='text-xs font-medium text-white/[.6] text-center'>
-						Spend less time managing URLs <br />
-						and more time growing your business.
-					</p>
-				</div>
+				{features.map(({ icon: Icon, title, description }) => (
+					<div
+						key={title}
+						className='group relative flex flex-col items-center p-4 gap-4 h-80 rgBorder rounded-lg drop-shadow-md transition-transform duration-300 hover:-translate-y-2 hover:scale-105'
+					>
+						<Icon
+							size={32}
+							className='text-[#81ECAE] group-hover:rotate-6 transition-transform duration-300'
+						/>
+						<p className='text-[#81ECAE] font-medium'>{title}</p>
+						<p className='text-xs font-medium text-white/[.6] text-center'>
+							{description}
+						</p>
+					</div>
+				))}
 			</div>
 		</section>
 	);
